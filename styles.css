@@ -1,0 +1,679 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: Garamond;
+
+}
+
+/*Navbar Start*/
+#navbar{
+background-color: transparent;
+/*position: fixed;*/
+}
+#logo{
+font-size: 20px;
+font-weight: 700;
+color: black;
+text-shadow: 0px 1px 1px black;
+margin-bottom: 5px;
+
+}
+#logo span:nth-child(1) {
+color: #1fa0ff; 
+letter-spacing: 1px;
+}
+
+#logo span:nth-child(2) {
+color: #1fa0ff;
+letter-spacing: 1px;
+}
+
+#logo span:nth-child(3) {
+color: #1fa0ff; 
+letter-spacing: 1px;
+}
+.navbar-toggler span{
+color: black;
+}
+.navbar-nav{
+margin-left:60%;
+}
+.nav-item .nav-link{
+font-size: 16px;
+font-weight: 550;
+color: black;
+ letter-spacing: 2px;
+ border-radius: 3px;
+ transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+color: #659dbd;
+}
+
+/*Navbar End*/
+
+/*home section start*/
+.home{
+width: 100%;
+height: 90%;
+background-image:LINEAR-GRADIENT(RGBA(0,0,0,0.6),RGBA(0,0,0,0.0)),URL("bg.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+.home .content{
+text-align: center;
+padding-top:  200px;
+
+}
+.home .content h5{
+color: white;
+font-size: 40px;
+font-weight: 800;
+text-shadow: 0px 1px 1px black;
+font-style:normal;
+}
+
+.home .content h1{
+color: white;
+font-size: 70px;
+font-weight: 600;
+text-shadow: 0px 1px 1px black;
+margin-top: 5px;
+}
+
+.changecontent::after{
+content: 'Place';
+color: #1fa0ff;
+font-weight: 1000;
+text-shadow: 0px 1px 1px black;
+animation: changetext 10s infinite linear;
+}
+@keyframes changetext {
+0% { content: "Luxury"; }
+16.666% { content: "Adventure"; }
+33.333% { content: "Relaxation"; }
+50% { content: "Rejuvenation"; }
+66.666% { content: "Serenity"; }
+83.333% { content: "Beauty"; }
+}
+.home .content p{
+color: white;
+font-size: 20px;
+font-weight: 600;
+text-shadow: 0px 1px 1px black;
+margin-bottom: 30px;
+margin-top: 5px;
+}
+.home .content a{
+padding: 10px;
+background: #1fa0ff;
+color: white;
+letter-spacing: 2px;
+font-weight: 550;
+border-radius: 20px;
+text-decoration: none;
+transition: 0.5s;
+}
+.home .content a:hover{
+background: white;
+color:#1fa0ff;
+}
+
+/*home section end*/
+
+
+/*Section Book Start */
+.book{
+background: #f9f9f9;
+padding: 40px;
+width: 100%;
+height: 100%;
+}
+.main-text h1{
+text-align: center;
+text-shadow: 0px 1px 1px black;
+font-weight: 600;
+
+}
+.main-text h1 span{
+color: #1fa0ff;
+}
+.book .card{
+border-radius: 10px;
+box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+margin-top: 10px;
+}
+.book form input{
+padding: 10px;
+color: black;
+border: none;
+outline: none;
+font-size: 15px;
+border-radius: 10px;
+box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+border: none;
+border-radius: 10px;
+resize: none;
+box-shadow: 0px 5px 5px -6px black;
+height: 200px;
+}
+.book .submit{
+width: 160px;
+font-size: 16px;
+font-weight: 550;
+background: #1fa0ff;
+color: white;
+margin-top: 10px;
+transition: 0.5s;
+margin-left: 200px;
+}
+.book .submit:hover{
+width: 170px;
+}
+
+/*Section Book end */
+
+
+
+
+/*Section Packages Start*/
+.main-txt h1{
+text-align: center;
+margin-top: 50px;
+font-weight: 600;
+text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+color: #1fa0ff;
+
+}
+.packages{
+  padding-top: 8px;
+  padding-bottom: 80px;
+}
+.packages .card{
+border-radius: 5px;
+border: none;
+box-shadow: rgb(0,0,0,0.1)0px 4px 12px;
+}
+.packages .card img{
+border-radius: 5px;
+}
+.packages .card .card-body{
+background: transparent;
+}
+.packages .card .card-body h3{
+font-size: 25px;
+font-weight: 600;
+}
+.packages .card .card-body p{
+font-size: 15px;
+}
+.checked{
+color: #1fa0ff;
+}
+.star i{
+font-size: 15px;
+}
+.packages .card .card-body h6{
+font-size: 20px;
+}
+.packages .card .card-body a {
+padding: 10px;
+text-decoration: none;
+background: #1fa0ff;
+color: white;
+border-radius: 5px;
+margin-left: 230px;
+}
+
+/*Section Packages End*/
+
+
+
+/*Section Amenities Start*/
+.amenities{
+
+background:#f9f9f9;
+margin-top: 0px;
+padding: 5px;
+width: 100%;
+height: 100%;
+}
+.amenities .card{
+box-shadow: rgb(0,0,0,0.1) 0px 4px 12px;
+border: none;
+cursor: pointer;
+}
+.amenities .card i{
+font-size: 80px;
+text-align: center;
+color: #1fa0ff;
+margin-top: 20px;
+
+}
+.amenities .card.card-body h3{
+font-weight: 600;
+}
+.amenities .card .card-body{
+text-align: center;
+}
+
+
+
+
+
+/*Section amenities end*/
+
+/*Section Gallery start*/
+.gallery{
+
+margin-top: 20px;
+padding: 10px;
+width: auto;
+height: auto;
+}
+.gallery .card{
+border-radius: auto;
+box-shadow: rgb(0,0,0,0.1) 0px 4px 12px;
+cursor: pointer;
+
+
+}
+.gallery .card img{
+border-radius: 10px;
+
+transition: 0.5s;
+}
+.gallery.card img:hover{
+transform: scale(1.1);
+
+}
+
+
+
+
+/*Section Gallery end*/
+
+
+/*about start*/
+.about{
+
+margin-top: 20px;
+padding: 10px;
+background-color: #f9f9f9;
+width: 100%;
+height: 100%;
+}
+.about .card{
+border-radius: 50px;
+width: 89%;
+height: 100%;
+}
+.about .card img{
+display: block;
+border-radius: 10px;
+}
+.about h2{
+font-weight: 600;
+letter-spacing: 1px;
+}
+.about p{
+font-weight: 500;
+}
+#about-btn{
+width: 150px;
+height: 38px;
+border: none;
+border-radius: 5px;
+background: #1fa0ff;
+color: white;
+letter-spacing: 2px;
+font-weight: 550;
+transition: 0.5s ease;
+cursor: pointer;
+}
+#about-btn:hover{
+width: 170px;
+}
+
+
+
+/*about end*/
+
+/*footer start*/
+#footer{
+width: 100%;
+margin-top: 0px;
+text-align: center;
+background: black;
+}
+#footer h1{
+font-weight: 600;
+padding-top: 30px;
+text-shadow: 0px 0px 1px black;
+color: whitesmoke;
+}
+#footer h1 span{
+color: white;
+}
+#footer p{
+
+color: white;
+}
+.social-links{
+padding: 10px;
+border-radius: 5px;
+font-size: 20px;
+background: black;
+color:white;
+margin-left: 10px;
+margin-bottom: 10px;
+transition: 0.5s ease;
+cursor: pointer;
+}
+.social-links i:hover{
+background: #1fa0ff;
+}
+/*footer end*/
+
+
+/* Button start*/
+button#scrollToTopBtn {
+position: fixed;
+bottom: 20px;
+right: 20px;
+padding: 10px 20px;
+font-size: 20px;
+background-color: #1fa0ff;
+color: #ffffff;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+
+}
+
+button#scrollToTopBtn:hover {
+background-color: whitesmoke;
+color: black;
+}
+
+/* Button end */
+
+
+/*Home @media start*/
+@media (max-width:850px){
+  .home{
+    background-position:50%;
+  }
+
+}
+
+@media(max-width:320px){
+  .home .content h5{
+    font-size: 30px;
+  }
+  .home .content h1{
+    font-size: 25px;
+  }
+  .home .content p{
+    font-size: 15px;
+  }
+  
+}
+
+@media (max-width: 375px) {
+    .home .content h5{
+      font-size: 30px;
+    }
+    .home .content h1{
+      font-size: 25px;
+    }
+    .home .content p{
+      font-size: 15px;
+    }
+}
+
+/*Home @media end*/
+
+/*Book @media start*/
+@media (max-width: 320px) { 
+  .book{
+    background: #f9f9f9;
+    padding: 40px;
+    width: 100%;
+    height: 180%;
+  }
+  .main-text h1{
+     padding: 20px;
+     
+  }
+  .form-control{
+    padding: 600px;
+  }
+  .book .submit{
+    position:absolute;
+    right: 180px;
+   
+    
+  }
+}
+
+
+@media (max-width: 375px) {
+  .book{
+    background: #f9f9f9;
+    padding: 40px;
+    width: 100%;
+    height: 170%;
+  }
+  .main-text h1{
+     padding: 20px;
+     
+  }
+  .form-control{
+    padding: 600px;
+  }
+  .book .submit{
+    position: absolute;
+    right: 80px;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+
+}
+
+
+@media (max-width: 1199.98px) {
+
+}
+
+
+@media (max-width: 1399.98px) {
+  
+}
+/*Book @media end*/
+
+/*Packages @media start*/
+@media (max-width: 320px) { 
+  .packages{
+    width: 100%;
+    height: 100%;
+  }
+  .packages .card .card-body a{
+    padding: 5px;
+    position:absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 80px;
+  }
+  
+}
+
+
+@media (max-width: 375px) {
+  .packages{
+    width: 100%;
+    height: 730%;
+  }
+  .packages .card .card-body a{
+    padding: 5px;
+    position:absolute;
+    right: 30px;
+    bottom: 20px;
+    width: 80px;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+
+}
+
+
+@media (max-width: 1199.98px) {
+
+}
+
+
+@media (max-width: 1399.98px) {
+  
+}
+/*Packages @media end*/
+
+/*Amenities @media start*/
+@media (max-width: 320px) { 
+  .amenities{
+    padding: 40px;
+    width: 100%;
+    height: 500%;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .amenities{
+    padding: 40px;
+    width: 100%;
+    height: 295%;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+
+}
+
+
+@media (max-width: 1199.98px) {
+
+}
+
+
+@media (max-width: 1399.98px) {
+  
+}
+/*Amenities @media end*/
+
+/*Gallery @media start*/
+@media (max-width: 320px) { 
+  .gallery{
+    padding: 30px;
+    width: 100%;
+    height: 320%;
+  }
+  
+}
+
+
+@media (max-width: 375px) {
+  .gallery{
+    padding: 30px;
+    width: 100%;
+    height: 290%;
+  }
+}
+
+
+@media (max-width: 991.98px) {
+
+}
+
+
+@media (max-width: 1199.98px) {
+
+}
+
+
+@media (max-width: 1399.98px) {
+  
+}
+/*Gallery @media end*/
+
+/*About @media start*/
+@media (max-width: 320px) { 
+  .about{
+    height: 150%;
+  }
+  #about-btn  {
+    position: absolute;
+    right: 20px;
+  }
+
+  .about p {
+    text-align: justify;
+  }
+  .card {
+    margin-left: 31px
+  }
+}
+
+
+
+@media (max-width: 375px) {
+  .about{
+    height: 150%;
+  }
+  #about-btn  {
+    position: absolute;
+    right: 20px;
+  }
+  .about p {
+    text-align: justify;
+  }
+  .card {
+    margin-left: 31px}
+}
+
+
+@media (max-width: 991.98px) {
+
+}
+
+
+@media (max-width: 1199.98px) {
+
+}
+
+
+@media (max-width: 1399.98px) {
+
+}
+/*About @media end*/
+
+@media (max-width: 320px) {
+  button#scrollToTopBtn{
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}
